@@ -3,87 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Expenser</title>
+    <title>Privacy Policy | Expenser</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #64748b;
+            --text-dark: #1e293b;
+            --text-light: #475569;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --accent: #dbeafe;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--text-light);
+            background-color: var(--bg-body);
+            margin: 0;
+            padding: 0;
         }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #6200EE;
-            border-bottom: 2px solid #6200EE;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #3700B3;
-            margin-top: 25px;
-        }
-        p, li {
-            font-size: 16px;
-        }
-        .last-updated {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .footer {
-            margin-top: 40px;
+
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 2rem 1rem;
             text-align: center;
-            font-size: 14px;
-            color: #888;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--text-dark);
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .update-date {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .content-card {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        h2 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-top: 1.8rem;
+        }
+
+        h4 {
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+        }
+
+        p, li {
+            font-size: 1.05rem;
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+            list-style-type: square;
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+
+        .highlight-box {
+            background-color: var(--bg-body);
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        .contact-info {
+            background: var(--accent);
+            padding: 2rem;
+            border-radius: 0.8rem;
+            margin-top: 3rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 640px) {
+            .content-card {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
 
+<header>
+    <h1>Privacy Policy for Expenser</h1>
+    <div class="update-date">Last updated: March 25, 2026</div>
+</header>
+
 <div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: March 25, 2026</p>
+    <div class="content-card">
+        <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+        
+        <div class="highlight-box">
+            We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
+        </div>
 
-    <p>Welcome to <strong>Expenser</strong>. Your privacy is critically important to us. This Privacy Policy explains how we handle your data within the application.</p>
+        <h2>Interpretation and Definitions</h2>
+        <h3>Interpretation</h3>
+        <p>The words whose initial letters are capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
 
-    <h2>1. Data Collection and Storage</h2>
-    <p>Expenser is designed as an <strong>offline-first</strong> application. All financial records, profiles, and expense data you enter are stored locally on your device's internal storage using a secure SQLite database.</p>
-    <ul>
-        <li>We <strong>do not</strong> collect, transmit, or store your financial data on any external servers.</li>
-        <li>Your data remains under your total control and stays on your device.</li>
-    </ul>
+        <h3>Definitions</h3>
+        <p>For the purposes of this Privacy Policy:</p>
+        <ul>
+            <li><strong>Account</strong> means a unique account created for You to access our Service.</li>
+            <li><strong>Application</strong> refers to Expenser, the software program provided by the Company.</li>
+            <li><strong>Company</strong> refers to Expenser, Kerala, India.</li>
+            <li><strong>Device</strong> means any device that can access the Service such as a computer, a cell phone or a digital tablet.</li>
+            <li><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+            <li><strong>Service Provider</strong> refers to third-party companies or individuals employed by the Company to facilitate the Service.</li>
+            <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure.</li>
+        </ul>
 
-    <h2>2. Permissions Used</h2>
-    <p>To provide a seamless experience, the app requires the following permissions:</p>
-    <ul>
-        <li><strong>SMS Permission:</strong> Used solely to detect transaction alerts from banks to help you log expenses automatically. We do not read personal messages.</li>
-        <li><strong>Storage Access:</strong> Used only to save and manage the local database of your expenses.</li>
-    </ul>
+        <h2>Collecting and Using Your Personal Data</h2>
+        <h3>Types of Data Collected</h3>
+        <h4>Personal Data</h4>
+        <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You.</p>
 
-    <h2>3. Third-Party Services</h2>
-    <p>The app does not use any third-party analytics, tracking, or advertising SDKs that collect personal identification information.</p>
+        <h4>Usage Data</h4>
+        <p>Usage Data is collected automatically when using the Service. This may include Your Device's IP address, browser type, the pages You visit, and the time spent on those pages. When accessing via a mobile device, We may collect unique device IDs and operating system information.</p>
 
-    <h2>4. Data Security</h2>
-    <p>Since the data is stored locally, the security of your information depends on the security of your mobile device. We recommend using device-level encryption and screen locks to protect your data.</p>
+        <h2>Use of Your Personal Data</h2>
+        <p>The Company may use Personal Data for the following purposes:</p>
+        <ul>
+            <li>To provide and maintain our Service.</li>
+            <li>To manage Your Account and registration.</li>
+            <li>To contact You via email, calls, or SMS regarding updates.</li>
+            <li>To manage Your requests and for data analysis.</li>
+        </ul>
 
-    <h2>5. Changes to This Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page, and the "Last Updated" date will be revised accordingly.</p>
+        <h2>Retention and Deletion</h2>
+        <p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. Account information is typically retained for the duration of your relationship plus up to 24 months after closure.</p>
+        <p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You directly within the Application settings.</p>
 
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us at:</p>
-    <p><strong>Email:</strong> yaduk883@gmail.com</p>
+        <h2>Security of Your Data</h2>
+        <p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet is 100% secure. While We use commercially reasonable means to protect Your data, We cannot guarantee its absolute security.</p>
 
-    <div class="footer">
-        &copy; 2026 Expenser App. All rights reserved.
+        <h2>Children's Privacy</h2>
+        <p>Our Service does not address anyone under the age of 16. If We become aware that We have collected Personal Data from anyone under 16 without parental consent, We take steps to remove that information.</p>
+
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, You can contact us:</p>
+            <ul>
+                <li><strong>By email:</strong> <a href="mailto:yaduk883@gmail.com">yaduk883@gmail.com</a></li>
+                <li><strong>Official Website:</strong> <a href="https://yaduk883.github.io/Expenser/privacy-policy.html">Visit our Privacy Page</a></li>
+            </ul>
+        </div>
     </div>
 </div>
+
+<footer>
+    &copy; 2026 Expenser. All rights reserved.
+</footer>
 
 </body>
 </html>
